@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('../src/homePage1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(44, 62, 80, 0); /* Navbar transparente */
+  backdrop-filter: blur(5px); /* Effet de flou */
+}
+.home-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+.search-icon {
+  text-decoration: none;
+  color: white; /* Couleur des icônes */
+  font-size: 20px;
+}
+
+.main-content {
+  display: flex;
+  padding-top: 60px;
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.023); /* Formulaire transparent */
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  margin: 20px;
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 2em;
+  color: #121c26;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f4f8f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fffdfd;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.date-inputs > div {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4858a0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+.contact-section {
+  background-color: rgba(44, 62, 80, 0); /* Footer transparent */
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item svg {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .date-inputs {
+    flex-direction: column;
+  }
+}
